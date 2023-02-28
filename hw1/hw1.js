@@ -108,7 +108,7 @@ for (let i = 220; i < canvas.width; i = i + 50) { // fence picket
     ctx.fill();
 }
 
-for (let i = 200; i < canvas.width; i = i + 5) { // grass
+for (let i = 200; i < canvas.width; i = i + 5) {
     ctx.beginPath();
     ctx.moveTo(i, 500);
     ctx.lineTo(i + 3, 490);
