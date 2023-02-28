@@ -95,6 +95,7 @@ ctx.fillRect(0, canvas.height - 100, canvas.width, canvas.height);
 
 ctx.fillStyle = "white"; // fence-lining
 ctx.fillRect(220, 470, 360, 10);
+
 for (let i = 220; i < canvas.width; i = i + 50) { // fence picket
     ctx.beginPath();
     ctx.moveTo(i, canvas.height - 100);
@@ -105,4 +106,14 @@ for (let i = 220; i < canvas.width; i = i + 50) { // fence picket
     ctx.closePath();
     ctx.fillStyle = "gray";
     ctx.fill();
+}
+
+
+for (let i = 200; i < canvas.width; i = i + 5) {
+    ctx.beginPath();
+    ctx.moveTo(i, 500);
+    ctx.lineTo(i + 3, 490);
+    ctx.strokeStyle = "green";
+    ctx.stroke();
+    ctx.lineWidth = 3;
 }
